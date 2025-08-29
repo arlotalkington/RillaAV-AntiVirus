@@ -26,6 +26,8 @@ button {
 }
 
 .download {
+  background-color: white;     /* default background */
+  color: #034c9b;              /* default text color */
   border: 2px solid #034c9b;
   padding: 12px 24px;
   border-radius: 8px;
