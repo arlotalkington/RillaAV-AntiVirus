@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0a0a0a;
+  color: #f0f0f0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  color: #4db6ff;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.downloads-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  background: #4db6ff;
+  color: #0a0a0a;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+button:hover {
+  background: #3399ff;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}

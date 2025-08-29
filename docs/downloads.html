@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RillaAV Downloads</title>
+  <link rel="stylesheet" href="downloads_styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>RillaAV AntiVirus Downloads</h1>
+    <p>Select a version to download:</p>
+
+    <div class="downloads-list">
+      <button onclick="downloadRillaAV('1.0.0')">Download v1.0.0</button>
+    </div>
+  </div>
+
+    <script>
+    function downloadRillaAV(version) { 
+      try {
+        const url = `https://github.com/arlotalkington/RillaAV-AntiVirus/releases/download/v${version}/RillaAV-${version}_Setup.exe`; 
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "";
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (err) {
+        alert("Error downloading RillaAV: " + err.message);
+      }
+    }
+  </script>
+</body>
+</html>
