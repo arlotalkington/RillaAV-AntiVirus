@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index_styles.css">
     <link rel="icon" href="RillaAV.ico" type="image/x-icon">
     <title>Home - RillaAV AntiVirus</title>
     <meta name="description" content="RillaAV AntiVirus - Protect your PC with advanced antivirus features.">
-  </head>
-    
-    <div class="welcome-01K3SP3S8J7MSS03KR5DY5NNVG">
-      <h1>RillaAV AntiVirus</h1>
-      <h4>RillaAV AntiVirus — Precision Protection, Always On Guard.</h4>
-    </div>
-  </body>
+</head>
+
+<body>
+<div class="welcome-01K3SP3S8J7MSS03KR5DY5NNVG">
+    <h1>RillaAV AntiVirus</h1>
+    <h4>RillaAV AntiVirus — Precision Protection, Always On Guard.</h4>
+</div>
+
+<button class="download">Download Now</button>
+
+<script>
+    function downloadRillaAV() {
+      try {
+        const url = "https://github.com/arlotalkington/RillaAV-AntiVirus/releases/download/v1.0.0/RillaAV-1.0.0_Setup.exe";
+        const link = document.createElement("a");
+        link.href = url;
+        link.download = "RillaAV-1.0.0_Setup.exe"; // Suggested filename
+        link.target = "_blank";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } catch (err) {
+        alert("Error downloading RillaAV: " + err.message);
+      }
+    }
+</script>
+</body>
 </html>
